@@ -9,4 +9,6 @@ fi
 # pass the bucket name as a positional parameter
 key_name=$1
 
-aws ec2 import-key-pair --key-name ${key_name} --public-key-material fileb://${key_name}.pub
+aws ec2 import-key-pair \
+    --key-name ${key_name} \
+    --public-key-material fileb://${key_name}.pub

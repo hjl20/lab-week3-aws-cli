@@ -14,6 +14,9 @@ if aws s3api head-bucket --bucket "$bucket_name" 2>/dev/null; then
     echo "Bucket $bucket_name already exists."
 else
   # change the line below
-  aws s3api create-bucket --bucket $bucket_name --region us-east-1
+  aws s3api create-bucket \
+        --bucket $bucket_name \
+        --region us-west-2 \
+        --create-bucket-configuration LocationConstraint=us-west-2
 fi
 
