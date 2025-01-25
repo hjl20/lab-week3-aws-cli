@@ -1,6 +1,6 @@
 # Script 1:
 1. Run `ssh-keygen` to create a new key-pair
-1. Name the name **bcitkey**
+1. Name the key **bcitkey**
 1. Run `./import-keypair.sh bcitkey` to import the bcitkey public key 
 
 Resources:
